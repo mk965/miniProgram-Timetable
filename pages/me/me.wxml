@@ -1,0 +1,54 @@
+<!--pages/fortest/fortest.wxml-->
+<view class="mine-wrapper">
+  <view class="avatar-wrapper">
+    <view>
+      <view class="avatar">
+        <image wx:if="{{avataUrl}}" style="border-radius:50%;" src="{{avataUrl}}"></image>
+        <image wx:else bindtap="wxLogin" style="border-radius:50%;" src="../../images/avatar.jpg"></image>
+      </view>
+      <view class="text">
+        <text wx:if="{{nick}}">{{nick}}</text>
+        <text wx:else bindtap="wxLogin">登录</text>
+				<!--<button open-type='getUserInfo'  bindgetuserinfo="bindGetUserInfo">获取授权		</button>-->
+      </view>
+    </view>
+  </view>
+
+  <view class="list-wrapper">
+    <view class="weui-cells weui-cells_after-title">
+      <block>
+        <navigator bindtap="bindStuNum" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+          <view class="weui-cell__hd">
+            <image src="../../images/icon_account.png"></image>
+          </view>
+          <view class="weui-cell__bd">教务账号</view>
+          <view wx:if="{{stuNum}}" class="weui-cell__ft weui-cell__ft_in-access">{{stuNum}}</view>
+					<view wx:else class="weui-cell__ft weui-cell__ft_in-access">未绑定</view>
+        </navigator>
+				<navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+          <view class="weui-cell__hd">
+            <image src="../../images/icon_update.png"></image>
+          </view>
+          <view class="weui-cell__bd">刷新课表</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access">上次更新：{{updateTime}}</view>
+        </navigator>
+      </block>
+    </view>
+		<view class="weui-cells">
+        <navigator url="/pages/home/feedback" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+          <view class="weui-cell__hd">
+            <image src="../../images/icon_feedback.png"></image>
+          </view>
+          <view class="weui-cell__bd">反馈</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </navigator>
+        <navigator url="/pages/home/about" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+					<view class="weui-cell__hd">
+            <image src="../../images/icon_about.png"></image>
+          </view>
+          <view class="weui-cell__bd">关于</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+        </navigator>
+      </view>
+  </view>
+</view>

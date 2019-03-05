@@ -1,0 +1,33 @@
+<view class="desc">
+  <view class='imagesize'>
+    <image class="in-image" src='../../images/logo.jpg'></image>
+  </view>
+  <text selectable="true">「青科课表」诚挚的欢迎公众号关联小程序，并期待与您合作。（AppID:wx185997ec92151851）</text>
+  <text class="title">数据来源：</text>
+  <text>· 青岛科技大学教务系统</text>
+  <text class="title">技术支持：\n</text>
+  <text>· Mencre (WeChat:mencre)</text>
+	<text>· AsKong (WeChat:KongFQ0458)</text>
+  <text>目前课表的功能正在逐渐增加中，立志成为青科学子的小帮手，如果你在使用中有问题或建议，请点击下方“联系客服”。</text>
+	<button open-type="contact" session-from="weapp" size='mini'>联系客服</button>
+	<button open-type='share' size='mini'>分享小程序</button>
+  <view class="weui-footer weui-footer_fixed-bottom">
+    <view class="weui-footer__links">
+      <view class="weui-footer__link">Mencre</view>
+    </view>
+    <view class="weui-footer__text">Copyright Mencre. 2019. {{version}}. </view>
+  </view>
+</view>
+<view class="bg-bubbles{{bg_display ? ' display' : ''}}">
+  <view></view>
+  <view></view>
+  <view></view>
+  <view></view>
+  <view></view>
+  <view></view>
+  <view></view>
+  <view></view>
+  <view></view>
+  <view></view>
+  <view></view>
+</view>

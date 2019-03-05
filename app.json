@@ -1,0 +1,38 @@
+{
+	"pages": [
+		"pages/index/index",
+		"pages/home/feedback",
+		"pages/home/about",
+		"pages/login/login",
+		"pages/me/me",
+		"pages/auth/auth"
+	],
+	"window": {
+		"navigationBarTitleText": "青科课表",
+		"navigationBarBackgroundColor": "#318EE2",
+		"backgroundColor": "#ebebeb"
+	},
+	"tabBar": {
+		"color": "#ffffff",
+		"backgroundColor": "#318EE2",
+		"selectedColor": "white",
+		"borderStyle": "white",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "课表",
+				"iconPath": "images/icon_timetable.png",
+				"selectedIconPath": "images/icon_timetable_1.png"
+			},
+			{
+				"pagePath": "pages/me/me",
+				"text": "我的",
+				"iconPath": "images/icon_me.png",
+				"selectedIconPath": "images/icon_me_1.png"
+			}
+		]
+	},
+	"networkTimeout": {
+		"request": 20000
+	}
+}
